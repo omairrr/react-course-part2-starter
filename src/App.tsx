@@ -9,19 +9,16 @@ import TaskList from "./state-management/Tasks/TaskList";
 import NavBar from "./state-management/NavBar";
 import HomePage from "./routing/HomePage";
 import TasksContext from "./state-management/Tasks/TasksContext";
-import AuthContext from "./state-management/Auth/AuthContext";
-import AuthProvider from "./state-management/Auth/AuthProvider";
 import TasksProvider from "./state-management/Tasks/TasksProvider";
 
 function App() {
   return (
     <>
-      <AuthProvider>
-        <TasksProvider>
-          <NavBar />
-          <TaskList />
-        </TasksProvider>
-      </AuthProvider>
+      <TasksProvider>
+        <Counter />
+        <NavBar />
+        <TaskList />
+      </TasksProvider>
     </>
   );
 }
