@@ -1,6 +1,6 @@
 import React, { Dispatch } from "react";
-import { Task } from "../TaskList";
-import { TaskAction } from "../Reducers/TasksReducer";
+import { Task } from "./TaskList";
+import { TaskAction } from "./TasksProvider";
 
 interface TaskContextType {
   tasks: Task[];
